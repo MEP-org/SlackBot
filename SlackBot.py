@@ -8,7 +8,6 @@ SLACK_TOKEN = os.environ.get("slack-token")
 class SlackBot:
 
     def __init__(self):
-        print(SLACK_TOKEN)
         self.client = slack.WebClient(token=SLACK_TOKEN)
 
     def post_message(self, channel, message):
