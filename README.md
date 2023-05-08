@@ -25,3 +25,18 @@ http://localhost:8000
 http://localhost:8000/docs
 http://localhost:8000/redoc
 ```
+<!-- post http://127.0.0.1:8000/notify -->
+<!-- body: {
+    "channel": "bot-test",
+    "message": "heyyy"
+} -->
+<!-- curl -->
+## Test
+```
+curl --location 'http://127.0.0.1:8000/notify' \
+--header 'Content-Type: application/json' \
+--data '{
+    "channel": "bot-test",
+    "message": "heyyy"
+}'
+```
